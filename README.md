@@ -16,6 +16,8 @@ This Google Apps Script defines an onEdit trigger function that activates when a
 ## Excel Functions
 This function returns all matches with user's email to HR information system =ARRAY_CONSTRAIN(ARRAYFORMULA(TEXTJOIN(", ", TRUE, IF(G6=HRIS!A:A, HRIS!B:B, ""))), 1, 1)
 
+![iScreen Shoter - Google Chrome - 240226214237](https://github.com/MiguelAngelHorta/Access-Reviews/assets/106134627/5232f0ec-057b-47a7-9a9d-848050ba57d1)
+
 Tracker formulas:
 =IF(AND(K14="No",N14="No"),"Need Both",IF(AND(K14="Yes",N14="No"),"Need SR",IF(AND(K14="No",N14="Yes"),"Need PR",IF(AND(K14="Yes",N14="Yes"),"Done"))))
 =IF(App1!$B$2="[Name/Date]", "No", "Yes")
