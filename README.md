@@ -6,17 +6,18 @@ This Google Apps Script automates the organization of sheets in a Google Spreads
 
 ## Automation button
 This Google Apps Script defines an "Automation" menu in a Google Sheets document that runs functions.
+![iScreen Shoter - 20240226214411483](https://github.com/MiguelAngelHorta/Access-Reviews/assets/106134627/bcf3cc18-3dbc-43da-83e3-2988b238dca7)
 
 ## Refresh Template
 This Google Apps Script clears and resets specific content, formatting, and borders in designated cells of each sheet (excluding the first sheet) in the active spreadsheet. Additionally, it clears content and formatting in rows from 6 onwards.
 
 ## Approved Tracking
 This Google Apps Script defines an onEdit trigger function that activates when a user edits a cell in the active spreadsheet. It specifically checks if the edited cell is in column B, and based on the selected option ('[Name/Date]' or 'Approved'), it either clears the corresponding cell in column C or populates it with the user's email and the current date.
+![iScreen Shoter - Google Chrome - 240226214237](https://github.com/MiguelAngelHorta/Access-Reviews/assets/106134627/5232f0ec-057b-47a7-9a9d-848050ba57d1)
+
 
 ## Excel Functions
 This function returns all matches with user's email to HR information system =ARRAY_CONSTRAIN(ARRAYFORMULA(TEXTJOIN(", ", TRUE, IF(G6=HRIS!A:A, HRIS!B:B, ""))), 1, 1)
-
-![iScreen Shoter - Google Chrome - 240226214237](https://github.com/MiguelAngelHorta/Access-Reviews/assets/106134627/5232f0ec-057b-47a7-9a9d-848050ba57d1)
 
 Tracker formulas:
 =IF(AND(K14="No",N14="No"),"Need Both",IF(AND(K14="Yes",N14="No"),"Need SR",IF(AND(K14="No",N14="Yes"),"Need PR",IF(AND(K14="Yes",N14="Yes"),"Done"))))
