@@ -1,5 +1,5 @@
-# Access-Reviews
-Appscript to manage access reviews in google sheets
+# Review and approval automation
+Appscript to manage reviews and approvals applicable to access reviews in google sheets
 
 ## SheetnamesAutomation
 This Google Apps Script automates the organization of sheets in a Google Spreadsheet by sorting them alphabetically, creating hyperlinks to each sheet in a specified tracking sheet, and updating a list of sheet names and URLs in columns A and B of the '*Tracker' tab.
